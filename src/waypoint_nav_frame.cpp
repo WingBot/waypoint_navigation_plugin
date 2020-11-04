@@ -74,6 +74,7 @@ WaypointFrame::WaypointFrame(rviz::DisplayContext *context, std::map<int, Ogre::
   ui_->setupUi(this);
 
   wp_pub_ = nh_.advertise<nav_msgs::Path>("waypoints", 1);
+  wp_pub_ = nh_.advertise<nav_msgs::Path>("waypoints", 1);
 
   //connect the Qt signals and slots
   connect(ui_->publish_wp_button, SIGNAL(clicked()), this, SLOT(publishButtonClicked()));

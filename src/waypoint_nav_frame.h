@@ -123,6 +123,7 @@ private:
 
   ros::NodeHandle nh_;
   ros::Publisher wp_pub_;
+  ros::Publisher wp_pose_arrays_pub_;
 
   WaypointNavTool* wp_nav_tool_;
   //pointers passed via contructor
